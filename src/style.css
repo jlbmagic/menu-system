@@ -1,0 +1,76 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  color: #000;
+  background-color: #fff;
+  margin: 10;
+  overflow: hidden;
+}
+
+p{
+  color:#282828;
+  font-size: 16px;
+}
+
+
+h1 {
+  background-color:#006690;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 10px;
+}
+
+.tintedBlackLeft {
+  background-color:#00000033;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding:11px 11px 11px 0px;
+}
+
+button {
+  padding: 5px 9px 5px 9px;
+  border-radius: 3px;
+  font-size: 18px;
+  border: 1px solid #0091CE;
+  background-color: #0091CE;
+  color: #fff;
+}
+
+#menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  padding: 10px 20px;
+  margin: 5px 0;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  transform-origin: left center; /* Scale from the left */
+}
+
+.menu-item:hover {
+  background-color: #e0e0e0;
+  transform: scaleX(1.05); /* Scale only horizontally */
+}
+
+.menu-item.hovered {
+  background-color: #d0d0d0;
+  transform: scaleX(1.08); /* Scale only horizontally */
+}
+
+.menu-item:active {
+  background-color: #c0c0c0;
+}
