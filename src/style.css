@@ -50,25 +50,32 @@ button {
   margin: 0;
 }
 
+.menu-vertical {
+  display: block;
+}
+
+.menu-horizontal {
+  display: flex;
+  gap: 10px; /* Adds space between horizontal items */
+}
+
 .menu-item {
   padding: 10px 20px;
-  margin: 5px 0;
   background-color: #f0f0f0;
   border-radius: 5px;
   font-family: Arial, sans-serif;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
-  transform-origin: left center; /* Scale from the left */
 }
 
 .menu-item:hover {
   background-color: #e0e0e0;
-  transform: scaleX(1.05); /* Scale only horizontally */
+  transform: scale(1.05);
 }
 
 .menu-item.hovered {
   background-color: #d0d0d0;
-  transform: scaleX(1.08); /* Scale only horizontally */
+  transform: scale(1.08);
 }
 
 .menu-item:active {
